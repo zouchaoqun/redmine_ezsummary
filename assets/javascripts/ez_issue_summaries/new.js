@@ -13,7 +13,7 @@ function required_field(){
 }
 
 jQuery(document).ready(function() {
-    $j("#recipients").autocomplete("/ez_contacts", {
+    $j("#recipients").autocomplete("/ez_contacts/show", {
         multiple: true
     });
     $j("#fill_in").click( fill_in );
