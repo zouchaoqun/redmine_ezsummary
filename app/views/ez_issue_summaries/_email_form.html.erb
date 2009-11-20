@@ -22,5 +22,6 @@
         <%= check_box_tag 'save_flag' %><%= label_tag 'save_flag', t("text_ezsummary_save_mail_tempate"), :title => t("text_tooltip_save_mail_tempate") %>
         <span class="notice"><%= t("text_mail_content_desc") %></span>
       </div>
+      <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> 
   <% end -%>
 </fieldset>
